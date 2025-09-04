@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhoon Talior</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<nav>
+    <h1>Akhoon Tailor</h1>
+    <h6>Rangar stop sadia kadal,unversity road,19003</h6>
+    <!-- logo -->
+    <div class="logo">
+        <img src="image\al-malak-abaya.jpg" alt="Logo" height="80px" width="80px">
+    </div>
+    <!-- logo end -->
+
+</nav>
+        
+      
+    </header>
+
+    <!-- FORM -->
+    <div id="item-name">
+<form id="myForm">
+ 
+     <h3>User Name: 
+
+      </h3> <input type="text" id="user-name" required><br>
+
+<!-- <h3>Sno: </h3>  <input type="text" id="itm-sno" required><br> -->
+  <h3>Item Name:</h3> <input type="text" id="itm-name" required><br>
+ <h3> Quantity: </h3><input type="number" id="itm-qunty" required><br>
+  <h3>Price: </h3><input type="number" id="itm-price" required><br>
+  <button class="buttons" type="submit" id="submit">Submit</button>
+</form>
+
+</div>
+
+<!-- Form End -->
+
+
+  <!-- TABLE -->
+  <div id="table-container">
+    <table id="myTable">
+      <div id="title">
+          <h1>Akhoon Tailor</h1>
+          <h6>Rangar stop sadia kadal,unversity road,19003</h6>
+          </div>
+         <div id="date-box"></div>
+         <div id="name" >3</div>
+      <tr>
+        <th>Sno</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+
+
+      </tr>
+         <tr id="finalRow" class="final-row">
+        <td colspan="4">Final Total</td>
+        <td id="grandTotal">0</td>
+      </tr>
+    </table>
+  </div>
+  <!-- TABLE END -->
+
+
+  <!-- DOWNLOAD BUTTONS -->
+  <button class="buttons" onclick="downloadPNG()">Download PNG</button>
+  <button class="buttons" onclick="downloadPDF()">Download PDF</button>
+
+  <!-- DOWNLOAD BUTTONS END -->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Akhoon Tailor. All rights reserved.</p>
+    <!-- contact -->
+    <p>Contact us: +92 300 1234567 |
+      Email:  hum
+    </p>
+  </footer>
+  <!-- Footer End -->
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+      
+</body>
+</html>
